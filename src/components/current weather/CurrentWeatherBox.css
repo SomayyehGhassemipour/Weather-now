@@ -55,28 +55,6 @@
   font-weight: 400;
   font-size: 60px;
   width: auto;
-  letter-spacing: -5px;
   margin: 10px 0;
   text-align: center;
-}
-
-.details {
-  width: 100%;
-}
-
-.parameter-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.parameter-label {
-  text-align: left;
-  font-weight: 400;
-  font-size: 12px;
-}
-
-.parameter-value {
-  text-align: right;
-  font-weight: 600;
-  font-size: 12px;
 }

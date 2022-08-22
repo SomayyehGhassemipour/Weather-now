@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { AsyncPaginate } from 'react-select-async-paginate';
 import { GEO_API_URL, geoApiOptions } from '../../Api';
+import './Search.css'
 
 function Search({ onSearchChange }) {
 
@@ -29,13 +30,15 @@ function Search({ onSearchChange }) {
   }
 
   return (
-    <AsyncPaginate
-      placeholder="Search for city"
-      debounceTimeout={600}
-      value={search_item}
-      onChange={handleOnChange}
-      loadOptions={loadOptions}
-    />
+    <div className="search-box">
+      <AsyncPaginate
+        placeholder="Search for city"
+        debounceTimeout={600}
+        value={search_item}
+        onChange={handleOnChange}
+        loadOptions={loadOptions}
+      />
+    </div>
   );
 }
 
